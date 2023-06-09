@@ -1,0 +1,85 @@
+body {
+    background: #6495ED;
+}
+
+
+{#left panel#}
+aside{
+    float:left;
+    background: #00008B;
+    width: 20%;
+    padding:2.5%;
+    height: 100vh;
+    border-right: 5px solid #0000FF;
+    }
+
+{#foto profil#}
+aside img{
+    width: 170px;
+    border-radius: 25px;
+    }
+
+{#My resume#}
+aside .logo{
+    color: #fff;
+    margin-left: 5px;
+    font-size: 30px;
+    font-family: URW Chancery L, cursive;
+    font-weight: bold;
+    }
+
+{#Navigation#}
+aside h3{
+    color: #fff;
+    margin-top: 50px;
+    margin-left: 20px;
+    font-size: 25px;
+    }
+
+aside ul{list-style: none}
+
+
+{#elements of left panel#}
+aside  ul li{
+    color: #fff;
+    display:block;
+    margin-top: 10px;
+    transition: transform .6s;
+    }
+
+
+{#elements of left panel#}
+
+aside  ul li:hover, aside  ul a:hover{
+    color: #eb5959;
+    text-decoration: none;
+    transform: scale(1.1);
+}
+
+
+{#background#}
+
+main .features{
+    float:left;
+    margin-top:20px;
+    margin-left:20px;
+    text-align:center;
+    width: 75%;
+}
+
+
+main .features h1{font-size:50px;}
+main .features p{max-width: 400px; margin: 20px auto}
+
+
+
+{#elements of notation#}
+
+.alert-warning{
+    float:left;
+    clear:both;
+    width: 500px;
+    margin: 20px 25%;
+    text-align: center;
+
+}

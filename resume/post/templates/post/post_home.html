@@ -1,0 +1,25 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Post{% endblock %}
+
+
+{% block content %}
+    <div class="features">
+        <h1>Post</h1>
+
+        {% if post %}
+
+            {% for el in post %}
+                <div class="alert alert-warning">
+                    <h3> {{ el.title }}</h3>
+                    <p> {{ el.anons }}</p>
+                    <a href="{% url 'post-detail' el.id %}"><button class="btn btn-warning"> More details</button></a>
+                </div>
+            {% endfor %}
+        {% else %}
+            <p>There are no posts</p>
+        {% endif %}
+    </div>
+{% endblock %}
+
+
